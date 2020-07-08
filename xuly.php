@@ -1,5 +1,5 @@
 <?php
- 
+  
     // Nếu không phải là sự kiện đăng ký thì không xử lý
     if (!isset($_POST['txtUsername'])){
         die('');
@@ -71,7 +71,12 @@
                           
     //Thông báo quá trình lưu
     if ($addmember)
-        echo "Quá trình đăng ký thành công. <a href='login.php'>Về trang chủ</a>";
+        echo "Quá trình đăng ký thành công. <a href='homepage.html'>Về trang chủ</a>"
+        . "<pre>Username: ".$_POST['txtUsername']." <pre>"
+            . "<pre>Email: ".$_POST['txtEmail']." <pre>"
+            . "<pre>Full name: ".$_POST['txtFullname']." <pre>"
+            . "<pre>Birthday: ".$_POST['txtBirthday']." <pre>"
+            . "<pre>Sex: ".$_POST['txtSex']." <pre>";
     else{
         var_dump($query);die();
     echo "Có lỗi xảy ra trong quá trình đăng ký. <a href='register.php'>Thử lại</a>";

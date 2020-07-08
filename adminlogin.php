@@ -1,3 +1,4 @@
+
 <?php
 //Khai báo sử dụng session
 session_start();
@@ -25,7 +26,7 @@ if (isset($_POST['dangnhap']))
     $password = md5($password);
      
     //Kiểm tra tên đăng nhập có tồn tại không
-    $query = mysqli_query($link,"SELECT username, password,role FROM member WHERE username='$username'");
+    $query = mysqli_query($link,"SELECT username, password FROM member WHERE username='$username'");
     if (mysqli_num_rows($query) == 0) {
         echo "Tên đăng nhập này không tồn tại. Vui lòng kiểm tra lại. <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
@@ -42,10 +43,10 @@ if (isset($_POST['dangnhap']))
      
     //Lưu tên đăng nhập
     $_SESSION['username'] = $username;
-        $_SESSION['role'] = $row['role'];
    
-    if($_SESSION["role"] == 2){
-         echo "Xin chào " ;
+   
+    if(role == 2){
+         echo "Xin chào " .$_SESSION['$username'] . "";
         echo "Bạn đăng nhập bằng admin <a href='admin.php'>Trang admin</a>";
         die();
     }
@@ -55,6 +56,7 @@ if (isset($_POST['dangnhap']))
     die(); 
     }
 }
+$id = $_SESSION["id"];
 ?>
 <!DOCTYPE html>
 <html>

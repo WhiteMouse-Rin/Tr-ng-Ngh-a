@@ -8,7 +8,7 @@
     }
     
     //Lấy connection
-    include_once '../ThuVien/connectDB_phpDB.php';
+    include_once '../HK2/Connect.php';
     
     //Lấy hết dữ liệu của form điều chỉnh để lưu lên databse
     $username   = addslashes($_POST['txtUsername']);

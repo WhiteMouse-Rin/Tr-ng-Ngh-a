@@ -3,13 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/HK2/register.php</file>
             <file>file:/C:/xampp/htdocs/HK2/home.php</file>
-            <file>file:/C:/xampp/htdocs/HK2/home.html</file>
             <file>file:/C:/xampp/htdocs/HK2/xuly.php</file>
-            <file>file:/C:/xampp/htdocs/HK2/Connect.php</file>
+            <file>file:/C:/xampp/htdocs/HK2/homepage.html</file>
+            <file>file:/C:/xampp/htdocs/HK2/admin.php</file>
+            <file>file:/C:/xampp/htdocs/HK2/Edit.php</file>
             <file>file:/C:/xampp/htdocs/HK2/login.php</file>
-            <file>file:/C:/xampp/htdocs/HK2/index.php</file>
+            <file>file:/C:/xampp/htdocs/HK2/detail.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,16 +1,8 @@
 
 <?php
 session_start();
-include_once '../ThuVien/connectDB_phpDB.php';
-if (isset($_SESSION["txtUsername"]) == FALSE) {
-    header("location:login.php");
-    exit();
-}
-if ($_SESSION["role"] == 2) {
-    header("location:login.php");
-    exit();
-}
-$name = $_SESSION["txtUsername"];
+include_once '../HK2/Connect.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -24,6 +16,12 @@ $name = $_SESSION["txtUsername"];
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
         <link href="Ass02_Table.css" rel="stylesheet" type="text/css"/>
     </head>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
     <body>
         <div class="container">
             <h2>Danh sách tài khoản khách hàng</h2>
@@ -34,8 +32,9 @@ $name = $_SESSION["txtUsername"];
             <table class="table tab-content ">
                 <thead>
                     <tr>
+                        <th>id</th>
                         <th>Username</th>
-                        <th>Password</th>
+                        
                         <th>Email</th>
                          <th>Fullname</th>
                           <th>Birthday</th>
@@ -52,6 +51,7 @@ $name = $_SESSION["txtUsername"];
                     foreach ($a_emp as $item) {
                         echo '<tr>';
                         echo "<td> $item[0] </td>";
+                        echo "<td> $item[1] </td>";
                         echo "<td> $item[2] </td>";
                         echo "<td> $item[3] </td>";
                         echo "<td> $item[4] </td>";
@@ -59,12 +59,11 @@ $name = $_SESSION["txtUsername"];
                         echo "<td> $item[6] </td>";
 
                         echo "<td>";
-                        if ($name != $item[0]) {
-                            echo "<a href='Ass02_EditEmp.php?id=$item[0]'>Edit</a> | ";
-                            echo "<a href='Ass02_DeleteEmp.php?id=$item[0]' onclick= 'return kt()'>Delete</a>";
-                        } else {
-                            echo "&nbsp; ";
-                        }
+                    
+                            echo "<a href='edit_info.php?id=$item[0]'>Edit</a> | ";
+                            echo "<a href='delete.php?id=$item[0]' onclick= 'return kt()'>Delete</a>";
+                     
+                        
                         echo "</td>";
                         echo '</tr>';
                     }

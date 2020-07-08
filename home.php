@@ -7,7 +7,7 @@
     </head>
     <body>
        <?php 
-       var_dump($_SESSION);die();
+       
        if (isset($_SESSION['username']) && $_SESSION['username']){
            echo 'Bạn đã đăng nhập với tên là '.$_SESSION['username']."<br/>";
            echo 'Click vào đây để <a href="logout.php">Logout</a>';
