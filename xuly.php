@@ -6,7 +6,7 @@
     }
      
     //Nhúng file kết nối với database
-    include('../ProjectHK2/Connect.php');
+    include('../Project/Connect.php');
           
     //Khai báo utf-8 để hiển thị được tiếng việt
     header('Content-Type: text/html; charset=UTF-8');
@@ -18,6 +18,8 @@
     $fullname   = addslashes($_POST['txtFullname']);
     $birthday   = addslashes($_POST['txtBirthday']);
     $sex        = addslashes($_POST['txtSex']);
+    
+   
           
     //Kiểm tra người dùng đã nhập liệu đầy đủ chưa
     if (!$username || !$password || !$email || !$fullname || !$birthday || !$sex)
@@ -46,6 +48,7 @@
     //Kiểm tra email đã có người dùng chưa
     if (mysqli_num_rows(mysqli_query($link,"SELECT email FROM member WHERE email='$email'")) > 0)
     {
+//        var_dump($email);die();   
         echo "Email này đã có người dùng. Vui lòng chọn Email khác. <a href='javascript: history.go(-1)'>Trở lại</a>";
         exit;
     }
@@ -57,8 +60,13 @@
             exit;
         }
     $data = array($username,$password,$email,$fullname,$sex,$birthday);
+    
+   
     $query =  "INSERT INTO member(username,password,email,fullname,sex,birthday) VALUES ('".implode("','", $data)."')";
     //Lưu thông tin thành viên vào bảng
+    
+    
+    
     $addmember = mysqli_query($link,$query);
                           
     //Thông báo quá trình lưu
