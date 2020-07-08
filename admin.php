@@ -34,12 +34,12 @@ include_once '../HK2/Connect.php';
                     <tr>
                         <th>id</th>
                         <th>Username</th>
-                        
+                        <th>Password</th>
                         <th>Email</th>
                          <th>Fullname</th>
                           <th>Birthday</th>
                         <th>Sex</th>
-                        <th>Role</th>
+                        
                     </tr>
                 </thead>
                 <tbody>
@@ -74,7 +74,7 @@ include_once '../HK2/Connect.php';
         </div>
         <script>
             function kt() {
-                return confirm("Are you sure ?");
+                return confirm("Bạn có chắc chắn muốn xoá?");
             }
         </script>
     </body>

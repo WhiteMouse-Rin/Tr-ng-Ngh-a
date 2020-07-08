@@ -51,7 +51,7 @@ if (isset($_POST['dangnhap']))
     }
  else {
        echo "Xin chào " . $username . "";
-    echo ". Bạn đã đăng nhập thành công. <a href='homepage.html'>Về trang chủ</a>";
+    echo ". Bạn đã đăng nhập thành công. <a href='homepage.php'>Về trang chủ</a>";
     die(); 
     }
 }
@@ -59,7 +59,7 @@ if (isset($_POST['dangnhap']))
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Login</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         
     </head>
@@ -251,7 +251,7 @@ if (isset($_POST['dangnhap']))
                 </tr>
             </table>
             <div>
-            <input type='submit' name="dangnhap" href="homepage.html" value='Đăng nhập' />
+            <input type='submit' name="dangnhap" href="homepage.php" value='Đăng nhập' />
             <a href='register.php' title='Đăng ký'>Đăng ký</a>
         </form>
     

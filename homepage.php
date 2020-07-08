@@ -7,8 +7,7 @@ $re = $r->fetch_assoc();
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <title>Cali Chicken</title>
     <meta charset="utf-8">
@@ -45,7 +44,6 @@ $re = $r->fetch_assoc();
         }
     </style>
 </head>
-
 <body>
     <nav class="navbar navbar-inverse">
         <div class="container-fluid">
@@ -67,6 +65,7 @@ $re = $r->fetch_assoc();
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li><a href="logout.php"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
                 </ul>
             </div>
         </div>

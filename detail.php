@@ -25,6 +25,9 @@ In ra danh sách khách hàng
                 <thead>
                     <tr>
                         <th>
+                            ID
+                        </th>
+                        <th>
                             Username
                         </th>
                         <th>

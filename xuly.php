@@ -71,7 +71,7 @@
                           
     //Thông báo quá trình lưu
     if ($addmember)
-        echo "Quá trình đăng ký thành công. <a href='homepage.html'>Về trang chủ</a>"
+        echo "Quá trình đăng ký thành công. <a href='homepage.php'>Về trang chủ</a>"
         . "<pre>Username: ".$_POST['txtUsername']." <pre>"
             . "<pre>Email: ".$_POST['txtEmail']." <pre>"
             . "<pre>Full name: ".$_POST['txtFullname']." <pre>"

@@ -36,15 +36,15 @@ include_once '../HK2/Connect.php';
     <form action="" method="POST">
         <table>
             <tr>
-                <td><label for="Username">Ten tai khoan</label></td>
+                <td><label for="Username">Tên tài khoản</label></td>
                 <td><input name="username" type="text" value="<?=(isset($res['Username'])) ? $res['Username'] : '' ?>"></td>
             </tr>
             <tr>
-                <td><label for="Password">Mk</label></td>
+                <td><label for="Password">Mật khẩu</label></td>
                 <td><input name="password" type="password" required></td>
             </tr>
             <tr>
-                <td><label for="Fullname">Ho va ten</label></td>
+                <td><label for="Fullname">Họ và tên</label></td>
                 <td><input name="fullname" type="text" value="<?=(isset($res['Fullname'])) ? $res['Fullname'] : '' ?>"></td>
             </tr>
             <tr>
@@ -56,7 +56,7 @@ include_once '../HK2/Connect.php';
                 <td><input name="dob" type="date" value="<?=(isset($res['Birthday'])) ? $res['Birthday'] : '' ?>"></td>
             
             <tr>
-                <td><label for="Sex">Gioi tinh</label></td>
+                <td><label for="Sex">Giới tính</label></td>
                 <td><input name="sex" type="text" value="<?=(isset($res['Sex'])) ? $res['Sex'] : '' ?>"></td>
             </tr>
             <tr>
