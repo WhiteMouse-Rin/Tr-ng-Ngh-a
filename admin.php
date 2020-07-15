@@ -34,7 +34,7 @@ include_once '../HK2/Connect.php';
                     <tr>
                         <th>id</th>
                         <th>Username</th>
-                        <th>Password</th>
+                        
                         <th>Email</th>
                          <th>Fullname</th>
                           <th>Birthday</th>
@@ -52,7 +52,7 @@ include_once '../HK2/Connect.php';
                         echo '<tr>';
                         echo "<td> $item[0] </td>";
                         echo "<td> $item[1] </td>";
-                        echo "<td> $item[2] </td>";
+                        
                         echo "<td> $item[3] </td>";
                         echo "<td> $item[4] </td>";
                         echo "<td> $item[5] </td>";

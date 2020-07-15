@@ -59,7 +59,7 @@ $re = $r->fetch_assoc();
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Product</a></li>
                     <li><a href="#">Contact</a></li>
                     <li><a href="edit_info.php?id=<?=(isset($re['id'])) ? $re['id'] : ''?>"><?=(isset($_SESSION['username'])) ? $_SESSION['username'] : ' '?></a></li>
                 </ul>

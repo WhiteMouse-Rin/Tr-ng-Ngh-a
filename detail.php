@@ -63,9 +63,9 @@ In ra danh sách khách hàng
                         echo "<td> $item[4] </td>";
                         echo "<td> $item[5] </td>";
                           echo "<td>";
-                          echo "<a href='detail.php?txtUsername=$item[0]'>Display</a> | ";
-                          echo "<a href='Lab07_SuaLop.php?id=$item[0]'>Edit</a> | ";
-                          echo "<a href='Lab07_XoaLop.php?id=$item[0]'>Remove</a>";
+//                          echo "<a href='detail.php?txtUsername=$item[0]'>Display</a> | ";
+//                          echo "<a href='Lab07_SuaLop.php?id=$item[0]'>Edit</a> | ";
+//                          echo "<a href='Lab07_XoaLop.php?id=$item[0]'>Remove</a>";
                           echo "</td>";
                           echo '</tr>';
                         
